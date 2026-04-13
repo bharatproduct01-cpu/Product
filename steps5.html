@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>step 5 page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header-->
+ <header>
+    <div class="navbar">
+        <h1>Product Bharat</h1>
+    </div>
+</header>
+
+<!-- about page start ... -->
+<div class="step">
+  <div class="ste1"><b>Step :1</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :2</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :3</b></div><div class="bod1"></div>
+  <div class="ste1" ><b>Step :4</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :5</b></div><div class="bod"></div>
+  <div class="ste"><b>Step :6</b></div>
+</div>
+<hr>
+<h3 style="text-align: center; color: azure;">🧭Lucky Draw</h3>
+<p style="color: beige;">আপনার সামনে একটা বোর্ড থাকবে তা spin করে Lucky draw জিতুন</p>
+
+<hr>
+<br>
+
+
+<style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #7605f7;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        #wheel {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            transition: transform 4s ease-out;
+        }
+
+        #spinBtn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #40FF00;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+
+        .pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        #hello1{
+            opacity: 0;
+        }
+        #result a{
+            color: black;
+            text-decoration: none;
+            background-color: #FF6900;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="hello1">
+        0
+    </p>
+
+    <h1>🎡 Spin & Win Discount</h1>
+
+    <div class="wheel-container">
+        <div class="pointer">
+            ▼
+        </div>
+        <br>
+        <img id="wheel" src="URL.png">
+    </div>
+
+    <button id="spinBtn" onclick="test()">Spin Now</button>
+<br /><br /><br /><br /><br /><br />
+    <div id="result">
+    </div>
+
+    <script>
+        let wheel = document.getElementById("wheel");
+        let result = document.getElementById("result");
+
+        let discounts = [
+            "100% OFF",
+            "99% OFF",
+            "75% OFF",
+            "50% OFF",
+            "80% OFF",
+            "95% OFF",
+            "100% OFF",
+            "65% OFF"
+        ];
+
+
+        function test() {
+            var i = document.getElementById("hello1").innerText;
+
+            if (i == 0) {
+
+
+                let randomIndex = Math.floor(Math.random() * discounts.length);
+                let degree = (360 * 5) + (randomIndex * 60);
+
+                wheel.style.transform = "rotate(" + degree + "deg)";
+
+                setTimeout(() => {
+                    document.getElementById("result").innerHTML= " <a href='steps6.html'>Win" + discounts[randomIndex];"</a> "
+                }, 6000);
+                document.getElementById("hello1").innerText = 1;
+            }
+        };
+    </script>
+
+<br><br><br><BR><br></BR>
+
+<div class="contr">
+        <div class="back"><a href="steps4.html">Back</a></div>
+</div><br><br><br><br><br><br><br>
+<h1 style="text-align: center; color: red;"> New Updates....</h1>
+
+ <h4>9 April 2026</h4>
+  <div class="up_box">
+      <a href="blog3.html">
+      <h3 style="text-align: center;">🎟️ ২০২৬ সালে কুপন কোড ব্যবহার করে কীভাবে ৫০% পর্যন্ত ডিসকাউন্ট পাবেন</h3>
+      <p class="para">অনলাইনে শপিং করার সময় অনেকেই কুপন কোড ব্যবহার করেন না, ফলে অপ্রয়োজনীয়ভাবে বেশি টাকা খরচ হয়ে যায়। কিন্তু সঠিকভাবে কুপন ব্যবহার করলে আপনি সহজেই ৫০% পর্যন্ত ছাড় পেতে পারেন।</p>
+      </a>
+  </div>
+
+
+ <!-- navigation bar item  -->
+<div class="navigation">
+  <button class="box1"><a href="index.html"><div>🏫</div>Home</a></button>
+  <button class="box2"><a href="product.html"><div>📦</div>Product</a></button>
+  <button class="box3"><a href="update.html"><div>🗓️</div>Update</a></button>
+  <button class="box4"><a href="company.html"><div>☎️</div>Company</a></button>
+</div>
+
+
+
+
+</body>
+</html>

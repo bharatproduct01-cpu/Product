@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>step 6 page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header-->
+ <header>
+    <div class="navbar">
+        <h1>Product Bharat</h1>
+    </div>
+</header>
+
+<!-- about page start ... -->
+<div class="step">
+  <div class="ste1"><b>Step :1</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :2</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :3</b></div><div class="bod1"></div>
+  <div class="ste1" ><b>Step :4</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :5</b></div><div class="bod1"></div>
+  <div class="ste1"><b>Step :6</b></div>
+</div>
+<hr>
+<h3 style="text-align: center;">🎁voucher code</h3>
+<p>সর্বশেষ আপনার সামনে voucher code থাকবে তাই দিয়ে আপনার পছন্দের প্রোডাক্ট কিনুন</p>
+<br>
+<div class="vaochar" id="vouchar"></div>
+<br>
+<div class="contr">
+        <button class="Next" onclick="copy(this)">Collect</button>
+</div>
+<h1 style="text-align: center; background-color: rgba(231, 142, 24, 0.945);">CONGRATULATION🥳 👏</h1>
+<hr>
+<br>
+<script>
+let discounts = [
+            "SaVe0nh6",
+            "LucK135",
+            "fliP-365",
+            "g2@j489",
+            "jbsd278",
+            "hwihV36",
+            "LdO0w3%",
+            "jb#lk*jh",
+            "1!j4lDN6",
+            "kj56bgNkg)",
+            "Sb*bkw23"
+            
+        ];
+let randomIndex = Math.floor(Math.random() * discounts.length);
+document.getElementById("vouchar").innerText=discounts[randomIndex];
+
+
+
+  function copy(btn) {
+    var text=document.getElementById("vouchar").value;
+    navigator.clipboard.writeText(text);
+    alert("Copy!!!!")
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <!-- navigation bar item  -->
+<div class="navigation">
+  <button class="box1"><a href="index.html"><div>🏫</div>Home</a></button>
+  <button class="box2"><a href="product.html"><div>📦</div>Product</a></button>
+  <button class="box3"><a href="update.html"><div>🗓️</div>Update</a></button>
+  <button class="box4"><a href="company.html"><div>☎️</div>Company</a></button>
+</div>
+
+
+
+
+</body>
+</html>
